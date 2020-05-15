@@ -1,0 +1,104 @@
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
+#start-btn {
+    margin-top: 20px;
+}
+
+#start-btn > a {
+    border: 2px solid white;
+}
+
+#main {
+    text-align: center;
+}
+
+#main-box {
+    padding: 50px;
+    padding-bottom: 20px;
+}
+
+#main-heading {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.secondary-text {
+    margin-top: 50px;
+}
+
+label {
+    width: 100%;
+}
+
+input {
+    width: 150px;
+}
+
+.navbar {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container-fluid {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+button {
+    margin-top: 3px;
+    /* min-width: 110px; */
+    /* width: 65px; */
+}
+
+.btn-block {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+label {
+    text-align: left;
+}
+
+
+#secondary-row {
+    margin-top: 30px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+.heading {
+    text-align: left;
+    margin-bottom: 10px;
+    /* margin-left: 100%; */
+}
+
+
+.model-output {
+    width: 100%;
+    width: 750px;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    border: 0;
+    border-bottom: 2px solid #415e55;
+}
+
+.solution-caption {
+    font-size: 16px;
+    color: red;
+    text-align: left;
+}
+
+/* #ym-clear-btn {
+    margin-left: 50px;
+    margin-right: 50px;
+} */

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="main.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Treatment optimization model</a>
+            </nav>
+            <button id="ym-default-btn" type="button" class="btn btn-warning">Default All</button>
+            <button id="clr-all-btn" class="btn btn-secondary my-2 my-sm-0 btn-success" type="submit">Clear All</button>
+            <button id="next-pat-btn" class="btn btn-info" type="submit">Next</button>
+        </div>
+    </div>
+
+    <div id="main" class="container-fluid">
+        <div id="main-box" class="home-elmt">
+            <div id="init-row" class="row">
+                <div class="col-xs-12 col-md-6 col-lg-2">
+                    <div class="label heading">
+                        <b>Input X:</b>
+                    </div>
+                    <label id="x1" class='setting'>
+                        <div class="label">
+                            X1:
+                        </div>
+                        <input id='max' value="100" type="number">
+                    </label>
+                    <label id="x2" class='setting' for="">
+                        <div class="label">
+                            X2:
+                        </div>
+                        <input id='length' value="10" type="number" >
+                    </label>
+                    <label id="x3" class='setting' for="">
+                        <div class="label">
+                            X3:
+                        </div>
+                        <input id='trialsAmount' value="1000" type="number" >
+                    </label>
+                    <label id="x4" class='setting' for="">
+                        <div class="label">
+                            X4:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x5" class='setting' for="">
+                        <div class="label">
+                            X5:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x6" class='setting' for="">
+                        <div class="label">
+                            X6:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x7" class='setting' for="">
+                        <div class="label">
+                            X7:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x8" class='setting' for="">
+                        <div class="label">
+                            X8:
+                        </div>
+                        <input id='concessionStep' value="2" type="number" min="0" max="100">
+                    </label>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-2">
+                    <br class="heading"/>
+                    <label class='setting' for="">
+                        <div id="x9" class="label">
+                            X9:
+                        </div>
+                        <input id='concessionMin' value="0" type="number" min="0" max="100">
+                    </label>
+                    <label id="x10" class='setting' for="">
+                        <div class="label">
+                            X10:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x11" class='setting' for="">
+                        <div class="label">
+                            X11:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x12" class='setting' for="">
+                        <div class="label">
+                            X12:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x13" class='setting' for="">
+                        <div class="label">
+                            X13:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x14" class='setting' for="">
+                        <div class="label">
+                            X14:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x15" class='setting' for="">
+                        <div class="label">
+                            X15:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="x16" class='setting' for="">
+                        <div class="label">
+                            X16:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <div class="btn-block">
+                        <button id="send-config-btn" type="button" class="btn btn-warning">Set default</button>
+                        <button id="send-config-btn" type="button" class="btn btn-success">Clear</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-2 offset-lg-1">
+                    <div class="label heading">
+                        <b>Input bounds:</b>
+                    </div>
+                    <label id="y1min" class='setting' for="">
+                        <div class="label">
+                            Y1 min:
+                        </div>
+                        <input id='length' value="10" type="number" >
+                    </label>
+                    <label id="y3min" class='setting' for="">
+                        <div class="label">
+                            Y2 min:
+                        </div>
+                        <input id='trialsAmount' value="1000" type="number" >
+                    </label>
+                    <label id="y4min" class='setting' for="">
+                        <div class="label">
+                            Y3 min:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y5min" class='setting' for="">
+                        <div class="label">
+                            Y4 min:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y7min" class='setting' for="">
+                        <div class="label">
+                            Y5 min:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y11min" class='setting' for="">
+                        <div class="label">
+                            Y6 min:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y16min" class='setting' for="">
+                        <div class="label">
+                            Y7 min:
+                        </div>
+                        <input id='concessionStep' value="2" type="number" min="0" max="100">
+                    </label>
+                    <label  id="u1min" class='setting' for="">
+                        <div class="label">
+                            U1 min:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="u2min" class='setting' for="">
+                        <div class="label">
+                            U2 min:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-2">
+                    <br class="heading"/>
+                    <label id="y1max" class='setting' for="">
+                        <div class="label">
+                            Y1 max:
+                        </div>
+                        <input id='concessionMin' value="0" type="number" min="0" max="100">
+                    </label>
+                    <label id="y3max" class='setting' for="">
+                        <div class="label">
+                            Y2 max:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y4max" class='setting' for="">
+                        <div class="label">
+                            Y3 max:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y5max" class='setting' for="">
+                        <div class="label">
+                            Y4 max:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y7max" class='setting' for="">
+                        <div class="label">
+                            Y5 max:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y11max" class='setting' for="">
+                        <div class="label">
+                            Y6 max:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="y16max" class='setting' for="">
+                        <div class="label">
+                            Y7 max:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="u1max" class='setting' for="">
+                        <div class="label">
+                            U1 max:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label id="u2max" class='setting' for="">
+                        <div class="label">
+                            U2 max:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <div class="btn-block">
+                        <button id="ym-set-def-btn" type="button" class="btn btn-warning">Set Defaults</button>
+                        <button id="ym-clear-btn" type="button" class="btn btn-success">Clear</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-2 offset-lg-1">
+                    <div class="label heading">
+                        <b>Output:</b>
+                    </div>
+                    <label class='setting' for="">
+                        <div class="label">
+                            Y1:
+                        </div>
+                        <input id='concessionMin' value="0" type="number" min="0" max="100">
+                    </label>
+                    <label class='setting' for="">
+                        <div class="label">
+                            Y2:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label class='setting' for="">
+                        <div class="label">
+                            Y3:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label class='setting' for="">
+                        <div class="label">
+                            Y4:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label class='setting' for="">
+                        <div class="label">
+                            Y5:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label class='setting' for="">
+                        <div class="label">
+                            Y6:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label class='setting' for="">
+                        <div class="label">
+                            Y7:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label class='setting' for="">
+                        <div class="label">
+                            U1:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <label class='setting' for="">
+                        <div class="label">
+                            U2:
+                        </div>
+                        <input id='concessionMax' value="10" type="number" min="0" max="100">
+                    </label>
+                    <div class="btn-block">
+                        <button id="ym-set-def-btn" type="button" class="btn btn-danger">Solve</button>
+                        <button id="ym-clear-btn" type="button" class="btn btn-success">Clear</button>
+                    </div>
+                    <label class='label' for="">
+                        <label class='solution-caption'>dfgdfsgdfg</label>
+                    </label>
+                </div>
+            </div>
+            <div id="secondary-row" class="row">
+                <!-- <div class="dummy-col col-xs-0 col-xl-3">
+                </div> -->
+                <div class="col-xs-12 col-md-6 col-lg-2 offset-lg-4"> <!-- offset-lg-4 -->
+                    <div class="label heading">
+                        <b>Middle-stage modeles:</b>
+                    </div>
+                    <label class='setting' for="">
+                        Y1:
+                        <label class='model-output'></label>
+                    </label>
+                    <label class='setting' for="">
+                        Y2:
+                        <label class='model-output'></label>
+                    </label>
+                    <label class='setting' for="">
+                        Y3:
+                        <label class='model-output'>adsgsadg</label>
+                    </label>
+                    <label class='setting' for="">
+                        Y4:
+                        <label class='model-output'>adsgsadg</label>
+                    </label>
+                    <label class='setting' for="">
+                        Y5:
+                        <label class='model-output'>adsgsadg</label>
+                    </label>
+                    <label class='setting' for="">
+                        Y6:
+                        <label class='model-output'>adsgsadg</label>
+                    </label>
+                    <label class='setting' for="">
+                        Y7:
+                        <label class='model-output'>adsgsadg</label>
+                    </label>
+                    <div class="btn-block">
+                        <button id="ym-clear-btn" type="button" class="btn btn-success">Clear</button>
+                    </div>
+                </div>
+                <!-- <div class="dummy-col col-xs-0 col-xl-3">
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="getstartedRenderer.js"></script>
+</body>
+</html>
